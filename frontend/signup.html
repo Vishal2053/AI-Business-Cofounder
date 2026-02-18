@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign Up · AI Business Co-Founder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">AI</span>
+        <span class="brand-text">Business Co-Founder</span>
+      </a>
+      <div id="userArea" class="user-area"></div>
+    </div>
+  </header>
+
+  <main class="container auth-page">
+    <div class="auth-wrap">
+      <div class="auth-card">
+        <h1>Create account</h1>
+        <p class="muted">Sign up to access the Demo dashboard.</p>
+
+        <form id="signupForm">
+          <label class="field">
+            <span>Full name</span>
+            <input id="signupName" type="text" placeholder="Your name" required>
+          </label>
+
+          <label class="field">
+            <span>Email</span>
+            <input id="signupEmail" type="email" placeholder="you@example.com" required>
+          </label>
+
+          <label class="field">
+            <span>Password</span>
+            <input id="signupPass" type="password" placeholder="Create a password" required>
+          </label>
+
+          <label class="field">
+            <span>Avatar URL (optional)</span>
+            <input id="signupAvatar" type="url" placeholder="https://.../photo.jpg">
+          </label>
+
+          <div id="signupError" class="form-error" style="display:none;"></div>
+
+          <button class="btn primary" type="submit">Create account</button>
+          <p class="muted small">
+            Already have an account? <a href="login.html">Login</a>
+          </p>
+        </form>
+      </div>
+
+      <div class="auth-side">
+        <div class="side-card">
+          <h3>What you get</h3>
+          <p class="muted">A clean dashboard to test the concept and UI flow.</p>
+          <ul class="checklist">
+            <li>Professional UI</li>
+            <li>Logged-in header</li>
+            <li>Redirect to Demo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <small>© <span id="year"></span> AI Business Co-Founder</small>
+      <small class="muted">Demo auth (localStorage)</small>
+    </div>
+  </footer>
+
+  <script src="auth.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

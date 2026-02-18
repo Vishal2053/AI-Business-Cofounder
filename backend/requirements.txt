@@ -1,9 +1,8 @@
-fastapi
+fastapi[standard]
 uvicorn
 python-multipart
 python-dotenv
-sqlalchemy
-psycopg2-binary
+pymongo
 langchain
 faiss-cpu
 openai
