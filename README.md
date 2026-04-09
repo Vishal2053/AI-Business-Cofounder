@@ -141,7 +141,7 @@ genai-business-cofounder/
 
 ### Step 1: Clone & Navigate
 ```bash
-git clone https://github.com/yourname/genai-business-cofounder.git
+git clone https://github.com/Vishal2053/genai-business-cofounder.git
 cd genai-business-cofounder
 ```
 
