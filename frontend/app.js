@@ -85,7 +85,8 @@
   clearBtn && clearBtn.addEventListener('click', ()=>{ setOutput(''); setStatus('') });
 
   // small UX bits
-  document.getElementById('year').textContent = new Date().getFullYear();
+  const yearEl = document.getElementById('year');
+  if(yearEl) yearEl.textContent = new Date().getFullYear();
   // initial output text
-  if(outputEl.textContent.trim() === '') setOutput('Your AI answers will appear here.');
+  if(outputEl && outputEl.textContent.trim() === '') setOutput('Your AI answers will appear here.');
 })();

@@ -6,7 +6,7 @@
   <title>Sign Up · AI Business Co-Founder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,31 +23,81 @@
   <main class="container auth-page">
     <div class="auth-wrap">
       <div class="auth-card">
-        <h1>Create account</h1>
-        <p class="muted">Sign up to access the Demo dashboard.</p>
+        <h1>Create Account</h1>
+        <p class="muted">Join founders and teams using AI to make better business decisions.</p>
 
         <form id="signupForm">
           <label class="field">
-            <span>Full name</span>
+            <span>Full Name</span>
             <input id="signupName" type="text" placeholder="Your name" required>
           </label>
 
           <label class="field">
-            <span>Email</span>
+            <span>Email Address</span>
             <input id="signupEmail" type="email" placeholder="you@example.com" required>
           </label>
 
           <label class="field">
             <span>Password</span>
-            <input id="signupPass" type="password" placeholder="Create a password" required>
+            <input id="signupPass" type="password" placeholder="Create a strong password" required>
           </label>
 
           <label class="field">
             <span>Avatar URL (optional)</span>
-            <input id="signupAvatar" type="url" placeholder="https://.../photo.jpg">
+            <input id="signupAvatar" type="url" placeholder="https://example.com/photo.jpg">
           </label>
 
           <div id="signupError" class="form-error" style="display:none;"></div>
+
+          <button class="btn primary" type="submit" style="width:100%;margin-top:14px;">Create Account</button>
+          
+          <p class="muted small" style="margin-top:16px;text-align:center;margin-bottom:0;">
+            Already have an account? <a href="login.html" style="color:var(--accent);font-weight:700;text-decoration:none;">Sign in here</a>
+          </p>
+        </form>
+      </div>
+
+      <div class="auth-side">
+        <div class="side-card">
+          <h3>Why Join Us?</h3>
+          <p>Get instant access to AI-powered business analysis. Upload documents, get actionable insights in seconds, and make confident decisions backed by data and risk assessment.</p>
+          <div style="margin-top:20px;display:flex;flex-direction:column;gap:12px;font-size:0.94rem;">
+            <div style="display:flex;gap:10px;align-items:flex-start;">
+              <span style="color:var(--accent);font-size:1.3rem;">✓</span>
+              <span>Secure document upload & storage</span>
+            </div>
+            <div style="display:flex;gap:10px;align-items:flex-start;">
+              <span style="color:var(--accent);font-size:1.3rem;">✓</span>
+              <span>AI-powered analysis in seconds</span>
+            </div>
+            <div style="display:flex;gap:10px;align-items:flex-start;">
+              <span style="color:var(--accent);font-size:1.3rem;">✓</span>
+              <span>Prioritized actions & risk alerts</span>
+            </div>
+            <div style="display:flex;gap:10px;align-items:flex-start;">
+              <span style="color:var(--accent);font-size:1.3rem;">✓</span>
+              <span>Full control over your data</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>&copy; 2024 AI Business Co-Founder. All rights reserved.</p>
+      <div>
+        <a href="#privacy">Privacy Policy</a> · 
+        <a href="#terms">Terms of Service</a> · 
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="auth.js"></script>
+</body>
+</html>
 
           <button class="btn primary" type="submit">Create account</button>
           <p class="muted small">

@@ -6,7 +6,7 @@
   <title>Login · AI Business Co-Founder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,47 +23,50 @@
   <main class="container auth-page">
     <div class="auth-wrap">
       <div class="auth-card">
-        <h1>Welcome back</h1>
-        <p class="muted">Login to access the Demo dashboard.</p>
+        <h1>Welcome Back</h1>
+        <p class="muted">Login to your account to access the AI Co-Founder dashboard and manage your business data.</p>
 
         <form id="loginForm">
           <label class="field">
-            <span>Email</span>
+            <span>Email Address</span>
             <input id="loginEmail" type="email" placeholder="you@example.com" required>
           </label>
 
           <label class="field">
             <span>Password</span>
-            <input id="loginPass" type="password" placeholder="••••••••" required>
+            <input id="loginPass" type="password" placeholder="Enter your password" required>
           </label>
 
           <div id="loginError" class="form-error" style="display:none;"></div>
 
-          <button class="btn primary" type="submit">Login</button>
-          <p class="muted small">
-            Don’t have an account? <a href="signup.html">Create one</a>
+          <button class="btn primary" type="submit" style="width:100%;margin-top:14px;">Sign In</button>
+          
+          <p class="muted small" style="margin-top:16px;text-align:center;margin-bottom:0;">
+            Don't have an account? <a href="signup.html" style="color:var(--accent);font-weight:700;text-decoration:none;">Create one here</a>
           </p>
         </form>
       </div>
 
       <div class="auth-side">
         <div class="side-card">
-          <h3>After login</h3>
-          <p class="muted">You will be redirected directly to <b>demo.html</b>.</p>
-          <ul class="checklist">
-            <li>Upload business files</li>
-            <li>Ask questions</li>
-            <li>Manage demo data</li>
-          </ul>
+          <h3>New to AI Co-Founder?</h3>
+          <p>Get started in minutes. Upload your business documents and let our AI help you make better decisions with actionable insights and risk assessments.</p>
+          <div style="margin-top:24px;">
+            <a href="signup.html" class="btn primary" style="width:100%;">Create Account Now</a>
+          </div>
         </div>
       </div>
     </div>
   </main>
-
+  
   <footer class="site-footer">
     <div class="container footer-row">
-      <small>© <span id="year"></span> AI Business Co-Founder</small>
-      <small class="muted">Demo auth (localStorage)</small>
+      <p>&copy; 2024 AI Business Co-Founder. All rights reserved.</p>
+      <div>
+        <a href="#privacy">Privacy Policy</a> · 
+        <a href="#terms">Terms of Service</a> · 
+        <a href="#contact">Contact</a>
+      </div>
     </div>
   </footer>
 
