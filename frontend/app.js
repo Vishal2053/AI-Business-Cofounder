@@ -1,5 +1,5 @@
 (function(){
-  const apiBase = 'http://localhost:8000';
+  const apiBase = 'https://ai-busines-cofounder.vercel.app/';
 
   const fileInput = document.getElementById('file');
   const uploadBtn = document.getElementById('uploadBtn');
